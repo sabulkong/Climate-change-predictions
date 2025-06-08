@@ -1,5 +1,8 @@
 Carbon Emissions Forecasting for SDG 13: Climate Action
+
 Machine Learning Project Summary
+
+
 🎯 Project Overview
 UN SDG Addressed: SDG 13 - Climate Action
 Problem Statement: Predicting carbon emissions to support evidence-based climate policy decisions
@@ -7,10 +10,13 @@ ML Approach: Supervised Learning - Regression Analysis
 Impact: Enable proactive climate action through data-driven insights
 
 📊 Technical Implementation
+
 Dataset & Features
+
 Primary Source: World Bank Open Data Climate Portal
 Alternative: EDGAR Emissions Database, Our World in Data
 Key Features:
+
 GDP per capita (economic indicator)
 Population (demographic factor)
 Energy consumption (infrastructure metric)
@@ -19,6 +25,7 @@ Renewable energy percentage (sustainability metric)
 Target Variable: CO2 emissions (metric tons)
 Time Range: 2000-2023 (annual data)
 Model Comparison Results
+
 Algorithm	R² Score	MAE	RMSE	CV Score	Best Use Case
 Random Forest	0.87	0.42	0.58	0.85±0.03	Best Overall
 Gradient Boosting	0.84	0.45	0.61	0.82±0.04	High accuracy
