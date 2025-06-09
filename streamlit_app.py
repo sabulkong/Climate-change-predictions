@@ -6,7 +6,9 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
-from sklearn.ensemble import RandomForestRegressor
+# from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+
 from sklearn.preprocessing import StandardScaler
 import joblib
 import pickle
@@ -100,7 +102,7 @@ def load_model():
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
     
-    model = RandomForestRegressor(n_estimators=100, random_state=42)
+    model = train_test_split(n_estimators=100, random_state=42)
     model.fit(X_scaled, y)
     
     return model, scaler, features
